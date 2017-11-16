@@ -2,19 +2,13 @@
 
   function RandomQuote() {
     var quotes= new Array();
-    quotes[0] = "...believes it may be useful in a time of need.";
-    quotes[1] = "...knows you have a problem, but accepts you anyway.";
-    quotes[2] = "...believes the aliens were involved at Oak Island.";
-    quotes[3] = "...demands to know the location of your hidden rebel base!";
-    quotes[4] = "...SAW you take the cookie from the cookie jar.";
-    return quotes[Math.floor(Math.random() * 4.99)];
+    quotes[0] = "No!";
+    quotes[1] = "Big race today.";
+    quotes[2] = "I got pole!";
+    quotes[3] = "Majestic Monolith!";
+    return quotes[Math.floor(Math.random() * quotes.length)];
   }
-  
-  var quotes = [
-    'song1.ogg',
-    'song2.ogg'
-  ];
-  var randomNumber = Math.floor(Math.random()*quotes.length);
+ 
   
   document.write(RandomQuote());
   $("field_name").update("New text");
